@@ -13,6 +13,7 @@ public class ConfiguracionSeguridad {
 
         http
                 .csrf(csrf -> csrf.disable())
+                .cors(cors->{})
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/bus/**").authenticated()
                         .anyRequest().permitAll()
