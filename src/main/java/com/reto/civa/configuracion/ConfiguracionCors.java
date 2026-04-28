@@ -17,7 +17,8 @@ public class ConfiguracionCors {
                 registry.addMapping("/**")
 
                         .allowedOrigins(
-                                "http://localhost:3000"
+                                "http://localhost:3000",
+                                "https://civatrainee.onrender.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
