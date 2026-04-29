@@ -16,10 +16,9 @@ public class ConfiguracionCors {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
 
-                        .allowedOrigins(
-                                "http://localhost:5173",
-                                "https://civatrainee.onrender.com"
-                        )
+                        .allowedOriginPatterns(
+                                "http://localhost:*",
+                                "https://deiosz.github.io")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
